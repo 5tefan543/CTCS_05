@@ -19,9 +19,7 @@ This repository collects code from multiple sources to provide a unified environ
 > **Authors:** Adrian Sampson, Wonsun Ahn, Jonathan Grier, Jason Clemons, and Dan Grossman  
 > **DOI:** [https://doi.org/10.1145/1993498.1993518](https://doi.org/10.1145/1993498.1993518)
 
-The repository was created for a Proseminar at the **University of Innsbruck** and is intended solely for **educational purposes**. It includes all the necessary components to replicate and understand the type-checking and approximate computing systems described in the paper.
-
-This repository was created for a Proseminar at the **University of Innsbruck**. It serves as a comprehensive setup for exploring the implementations and concepts described in the paper linked above. The project combines tools and frameworks to help understand approximate computing and type systems in practice.
+This repository was created for a **Proseminar at the University of Innsbruck** and is intended solely for **educational purposes**. It provides a comprehensive setup to replicate and explore the implementations and concepts described in the linked paper. By combining tools and frameworks, the repository helps understand approximate computing and type-checking systems.
 
 ---
 
