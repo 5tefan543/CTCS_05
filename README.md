@@ -77,6 +77,77 @@ docker run -it ctcs05
 
 This command starts the container and drops you into a shell where you can interact with the compiled project.
 
+### 4. Test the System
+
+After starting the Docker container, you can test the functionality of the project using the provided example applications. Follow these steps:
+
+#### Navigate to the Example Applications
+1. Inside the container, list the project directories:
+   ```bash
+   ls
+   ```
+   You should see the following directories:
+   ```
+   checker-framework  checker-runtime  enerj  enerj-apps
+   ```
+
+2. Change to the `enerj-apps` directory, which contains example applications:
+   ```bash
+   cd enerj-apps/
+   ```
+
+3. List the available applications:
+   ```bash
+   ls
+   ```
+   Example output:
+   ```
+   HelloWorld  collect.py  count.py  imagefill  jmeint  scimark2  sclc  simpleRaytracer  zxing
+   ```
+
+#### Compile and Run the Example Application
+1. Navigate to the `HelloWorld` example:
+   ```bash
+   cd HelloWorld/
+   ```
+
+2. Compile the `HelloWorld.java` program using the EnerJ compiler:
+   ```bash
+   ../../enerj/bin/enerjc -Alint=simulation HelloWorld.java
+   ```
+
+3. Run the compiled program with the EnerJ runtime:
+   ```bash
+   ../../enerj/bin/enerj -noisy HelloWorld
+   ```
+
+   Example output:
+   ```
+   Loading PrecisionRuntimeRoot
+   Initializing noisy EnerJ runtime.
+      Constants file not found; using defaults.
+      SRAM WF: 87096
+      SRAM RU: 25118864
+      float bits: 8
+      double bits: 16
+      DRAM decay: 100000
+      timing error mode: 2
+      timing error prob: 1.5
+   (878+55)*10=9330
+   ```
+
+4. You can repeat the `enerj` command to observe the behavior of the approximate computing runtime:
+   ```bash
+   ../../enerj/bin/enerj -noisy HelloWorld
+   ```
+
+---
+
+### Additional Testing Notes
+- Modify the `HelloWorld.java` source file to experiment with other computations.
+- Explore other example applications in the `enerj-apps` directory, such as `simpleRaytracer` or `scimark2`, to test more complex scenarios.
+- Use the EnerJ compiler (`enerjc`) and runtime (`enerj`) to test your own Java programs that utilize approximate computing annotations.
+
 ---
 
 ## Why Ubuntu 14.04?
