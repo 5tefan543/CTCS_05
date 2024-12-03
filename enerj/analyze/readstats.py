@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import json
@@ -9,13 +9,12 @@ def showstatblock(items, unit='ops'):
     for name, (precise, approx) in items:
         total = precise + approx
         frac = float(approx) / total
-        print '  %s: %i %s total, %.1f%% approx' % \
-                    (name, total, unit, frac*100)
+        print(f'  {name}: {total} {unit} total, {frac * 100:.1f}% approx')
 
 def showstats(stats):
     ops_arith = []
     ops_mem = []
-    for name, vals in stats['operations'].iteritems():
+    for name, vals in stats['operations'].items():
         if name.startswith('load') or name.startswith('store'):
             ops_mem.append((name, vals))
         else:
@@ -24,7 +23,7 @@ def showstats(stats):
     ops_arith.sort()
     
     footprint = []
-    for name, vals in stats['footprint'].iteritems():
+    for name, vals in stats['footprint'].items():
         section, kind = name.split('-')
         if kind != 'bytes':
             # Skip object stats -- they're not very useful.
@@ -32,13 +31,13 @@ def showstats(stats):
         footprint.append((section, vals))
     footprint.sort()
     
-    print 'Arithmetic operations:'
+    print('Arithmetic operations:')
     showstatblock(ops_arith, 'ops')
-    print
-    print 'Memory accesses:'
+    print()
+    print('Memory accesses:')
     showstatblock(ops_mem, 'accesses')
-    print
-    print 'Footprint:'
+    print()
+    print('Footprint:')
     showstatblock(footprint, 'byte-ms')
 
 if __name__ == '__main__':
