@@ -133,7 +133,7 @@ final class MultiFinderPatternFinder extends FinderPatternFinder {
      *  - feature similar module sizes
      *  - are placed in a distance so the estimated module count is within the QR specification
      *  - have similar distance between upper left/right and left top/bottom finder patterns
-     *  - form a triangle with 90° angle (checked by comparing top right/bottom left distance
+     *  - form a triangle with 90 degree angle (checked by comparing top right/bottom left distance
      *    with pythagoras)
      *
      * Note: we allow each point to be used for more than one code region: this might seem
@@ -205,7 +205,7 @@ final class MultiFinderPatternFinder extends FinderPatternFinder {
             continue;
           }
 
-          // Calculate the diagonal length by assuming a 90° angle at topleft
+          // Calculate the diagonal length by assuming a 90 degree angle at topleft
           float dCpy = (float) Math.sqrt(dA * dA + dB * dB);
           // Compare to the real distance in %
           float vPyC = Math.abs(((dC - dCpy) / Math.min(dC, dCpy)));

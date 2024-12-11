@@ -35,7 +35,7 @@ import com.google.zxing.Result;
  * Parses strings of digits that represent a RSS Extended code.
  * 
  * @author Antonio Manuel Benjumea Conde, Servinform, S.A.
- * @author Agustín Delgado, Servinform, S.A.
+ * @author Agustin Delgado, Servinform, S.A.
  */
 final class ExpandedProductResultParser extends ResultParser {
 
