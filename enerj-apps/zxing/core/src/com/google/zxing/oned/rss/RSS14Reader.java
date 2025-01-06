@@ -350,7 +350,7 @@ public final class RSS14Reader extends AbstractRSSReader {
       counters[i] = counters[i-1];
     }
     counters[0] = firstCounter;
-    int value = parseFinderValue(counters,(@Approx int [] @Approx []) FINDER_PATTERNS);
+    int value = parseFinderValue(counters,(@Approx int [][]) FINDER_PATTERNS);
     int start = firstElementStart;
     int end = startEnd[1];
     if (right) {

@@ -60,7 +60,8 @@
            debug="${generate-debug}"
            deprecation="true"
            fork="true"
-           classpath="../../enerj/build/enerj.jar" />
+           classpath="../../enerj/build/enerj.jar"
+           encoding="UTF-8"/>
     <jar jarfile="core.jar" basedir="build">
       <!-- These entries allow core.jar to function as an OSGi bundle, and also specifies
            additional attributes for compatibility with BugLabs's BUG platform.

@@ -1,17 +1,13 @@
-import json
+import sys
 import os
+import json
 import matplotlib.pyplot as plt
 import numpy as np
-import os
 from collections import OrderedDict
 
+# The creation of this script used Chat-GPT as a Coding assistant.
 
-
-# The creation of this scrip used Chat-GPT as a Coding asistance.
-
-def load_json(file_name):
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(script_dir, file_name)
+def load_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
@@ -48,8 +44,7 @@ def rename_and_reorder_benchmarks(benchmark_data):
 
     return ordered_data
 
-
-def plot_output_error(benchmark_data, filename="output_error_plot.png"):
+def plot_output_error(benchmark_data, directory=".", filename="output_error_plot.png"):
     # Extract the benchmark names and the corresponding collective values
     benchmark_names = list(benchmark_data.keys())
     values_mild = [benchmark_data[name]["collective"][0] for name in benchmark_names]
@@ -69,10 +64,10 @@ def plot_output_error(benchmark_data, filename="output_error_plot.png"):
     plt.bar(x - bar_width, values_mild, width=bar_width, label="Mild", color="darkblue", edgecolor="black")
     plt.bar(x, values_medium, width=bar_width, label="Medium", color="blue", edgecolor="black")
     plt.bar(x + bar_width, values_aggressive, width=bar_width, label="Aggressive", color="lightblue", edgecolor="black")
-
+    
     # Set axis labels
     plt.xlabel("Benchmark", fontsize=12)
-    plt.ylabel("output error", fontsize=12)
+    plt.ylabel("Output Error", fontsize=12)
 
     # Set x-ticks and rotate labels
     plt.xticks(x, benchmark_names, rotation=45, ha="right", fontsize=10)
@@ -95,16 +90,14 @@ def plot_output_error(benchmark_data, filename="output_error_plot.png"):
     )
 
     # Save the plot
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.join(script_dir, filename)
+    output_path = os.path.join(directory, filename)
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
     plt.close()
 
     print(f"Plot saved as '{output_path}'.")
 
-
-def plot_operation_fractions(benchmark_data, filename="operation_fractions_plot.png"):
+def plot_operation_fractions(benchmark_data, directory=".", filename="operation_fractions_plot.png"):
     """
     Creates and saves a plot showing operation fractions for DRAM, SRAM, Integer operations, and FP operations.
 
@@ -155,7 +148,7 @@ def plot_operation_fractions(benchmark_data, filename="operation_fractions_plot.
 
     # Set axis labels
     plt.xlabel("Benchmark", fontsize=12)
-    plt.ylabel("fraction approximate", fontsize=12)
+    plt.ylabel("Fraction Approximate", fontsize=12)
 
     # Set x-ticks and rotate labels
     plt.xticks(x, benchmark_names, rotation=45, ha="right", fontsize=10)
@@ -178,16 +171,14 @@ def plot_operation_fractions(benchmark_data, filename="operation_fractions_plot.
     )
 
     # Save the plot
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.join(script_dir, filename)
+    output_path = os.path.join(directory, filename)
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
     plt.close()
 
     print(f"Plot saved as '{output_path}'.")
 
-
-def plot_normalized_total_energy(benchmark_data, energy_save_data, filename="normalized_total_energy_plot.png"):
+def plot_normalized_total_energy(benchmark_data, energy_save_data, directory=".", filename="normalized_total_energy_plot.png"):
     """
     Creates and saves a plot showing energy consumption for DRAM, SRAM, Integer, and FP components.
 
@@ -386,26 +377,53 @@ def plot_normalized_total_energy(benchmark_data, energy_save_data, filename="nor
     )
 
     # Save the plot
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.join(script_dir, filename)
+    output_path = os.path.join(directory, filename)
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
     plt.close()
 
     print(f"Plot saved as '{output_path}'.")
 
+def print_usage():
+    print("Usage: python script.py [<directory>]")
+    print("  <directory>: Directory where results.json and energy_save.json are located, and where plots will be saved (default: current directory)")
 
 def main():
+    directory = os.getcwd()
+
+    args = sys.argv[1:]
+    if len(args) > 1:
+        print("Error: Too many arguments.")
+        print_usage()
+        sys.exit(1)
+
+    if len(args) == 1:
+        directory = args[0]
+
+    if not os.path.isdir(directory):
+        print(f"Error: Directory '{directory}' does not exist.")
+        sys.exit(1)
+
+    results_file = os.path.join(directory, 'results.json')
+    energy_save_file = os.path.join(directory, 'energy_save.json')
+
+    if not os.path.isfile(results_file):
+        print(f"Error: File '{results_file}' does not exist.")
+        sys.exit(1)
+    if not os.path.isfile(energy_save_file):
+        print(f"Error: File '{energy_save_file}' does not exist.")
+        sys.exit(1)
+
     # Load JSON files
-    benchmarks_data = load_json('benchmarks.json')
+    benchmarks_data = load_json(results_file)
     benchmarks_data = rename_and_reorder_benchmarks(benchmarks_data)
 
-    energy_save_data = load_json('energy_save.json')
+    energy_save_data = load_json(energy_save_file)
 
     # Generate plots
-    plot_output_error(benchmarks_data)
-    plot_operation_fractions(benchmarks_data)
-    plot_normalized_total_energy(benchmarks_data, energy_save_data)
+    plot_output_error(benchmarks_data, directory=directory)
+    plot_operation_fractions(benchmarks_data, directory=directory)
+    plot_normalized_total_energy(benchmarks_data, energy_save_data, directory=directory)
 
 if __name__ == "__main__":
     main()

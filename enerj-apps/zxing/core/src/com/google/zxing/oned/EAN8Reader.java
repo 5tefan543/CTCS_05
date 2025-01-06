@@ -46,7 +46,7 @@ public final class EAN8Reader extends UPCEANReader {
     int rowOffset = startRange[1];
 
     for (int x = 0; x < 4 && rowOffset < end; x++) {
-      @Approx int bestMatch = decodeDigit(row, counters, rowOffset, (@Approx int [] @Approx [])L_PATTERNS);
+      @Approx int bestMatch = decodeDigit(row, counters, rowOffset, (@Approx int [][])L_PATTERNS);
       result.append((char) Endorsements.endorse('0' + bestMatch));
       for (int i = 0; i < counters.length; i++) {
         rowOffset += counters[i];
@@ -57,7 +57,7 @@ public final class EAN8Reader extends UPCEANReader {
     rowOffset = middleRange[1];
 
     for (int x = 0; x < 4 && rowOffset < end; x++) {
-      @Approx int bestMatch = decodeDigit(row, counters, rowOffset, (@Approx int [] @Approx [])L_PATTERNS);
+      @Approx int bestMatch = decodeDigit(row, counters, rowOffset, (@Approx int [][])L_PATTERNS);
       result.append((char) Endorsements.endorse('0' + bestMatch));
       for (int i = 0; i < counters.length; i++) {
         rowOffset += counters[i];

@@ -3,11 +3,14 @@ FROM ubuntu:14.04
 # Set environment variables to avoid interactive prompts during installation
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Update package lists and install OpenJDK 7 and other necessary packages
+# Update package lists and install required tools and libraries
 RUN apt-get update && \
-    apt-get install -y unzip && \
-    apt-get install -y ant && \
-    apt-get install -y openjdk-7-jdk
+    apt-get install -y \
+    unzip \
+    ant \
+    openjdk-7-jdk \
+    python2.7 && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Create a folder within the container
 RUN mkdir -p /CTCS_05/

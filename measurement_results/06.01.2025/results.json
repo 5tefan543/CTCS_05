@@ -1,0 +1,677 @@
+{
+    "SciMark2: SMM": {
+        "collective": [
+            4.2684650832434647e-10,
+            2.9703577495322775e-05,
+            0.007142286045878391
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                0.0,
+                0.0,
+                4.3066268540126553e-10
+            ],
+            "MB_DOUBLE_APPROX": [
+                4.2684650832434647e-10,
+                2.9703577495322775e-05,
+                0.007142286045878391
+            ],
+            "MB_FLOAT_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                0.0,
+                7.713609667955236e-11
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                9834,
+                7060
+            ],
+            "fpu": [
+                61,
+                10000
+            ],
+            "heap": [
+                46872,
+                69760
+            ],
+            "loads": [
+                61954,
+                16000
+            ],
+            "alu": [
+                15311,
+                0
+            ],
+            "stack": [
+                607088,
+                364648
+            ]
+        }
+    },
+    "SciMark2: FFT": {
+        "collective": [
+            3.4639961741037006e-08,
+            0.7179957910699285,
+            1.0
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                0.0,
+                0.08811229553575747,
+                1.0
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                0.0,
+                1.0,
+                1.0
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                7.18951534937895e-09,
+                1.0
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                9.497007347203379e-12,
+                1.3864112738057321e-08,
+                1.0
+            ],
+            "MB_DOUBLE_APPROX": [
+                3.4639961741037006e-08,
+                0.0022869998438552284,
+                0.3018560046653773
+            ],
+            "MB_FLOAT_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                0.0,
+                1.862645633218807e-09
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                0.09035867816206522
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                51556,
+                69464
+            ],
+            "fpu": [
+                33,
+                72500
+            ],
+            "heap": [
+                71585,
+                247040
+            ],
+            "loads": [
+                280516,
+                116900
+            ],
+            "alu": [
+                117179,
+                0
+            ],
+            "stack": [
+                41590788,
+                88076528
+            ]
+        }
+    },
+    "ImageJ": {
+        "collective": [
+            0.0,
+            0.0,
+            0.101171875
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                0.0,
+                0.0,
+                0.0205078125
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                0.0,
+                0.0,
+                0.0740234375
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                0.03623046875,
+                0.069140625
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                0.0,
+                0.0630859375,
+                0.10634765625
+            ],
+            "MB_DOUBLE_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "MB_FLOAT_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                0.07412109375
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                7925,
+                4184
+            ],
+            "fpu": [
+                0,
+                0
+            ],
+            "heap": [
+                25124,
+                1403488
+            ],
+            "loads": [
+                47508,
+                20813
+            ],
+            "alu": [
+                31297,
+                3866
+            ],
+            "stack": [
+                2199967,
+                1835832
+            ]
+        }
+    },
+    "SciMark2: LU": {
+        "collective": [
+            3.707586293533183e-10,
+            3.4349448724596555e-05,
+            0.6187238726308231
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                0.0,
+                0.0,
+                0.37768062843864947
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                0.0,
+                0.10000000000000178,
+                1.0
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                0.0,
+                9.240276471755848e-09
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                0.0,
+                0.0,
+                1.4277389093209081e-08
+            ],
+            "MB_DOUBLE_APPROX": [
+                3.707586293533183e-10,
+                3.4349448724596555e-05,
+                0.0067878581013479265
+            ],
+            "MB_FLOAT_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                8.519185357158676e-13
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                75262,
+                55480
+            ],
+            "fpu": [
+                111,
+                62790
+            ],
+            "heap": [
+                70875,
+                606080
+            ],
+            "loads": [
+                459692,
+                107210
+            ],
+            "alu": [
+                137199,
+                0
+            ],
+            "stack": [
+                32969572,
+                20381616
+            ]
+        }
+    },
+    "ZXing": {
+        "collective": [
+            0.0,
+            0.0,
+            1.0
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "MB_DOUBLE_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "MB_FLOAT_APPROX": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                203645,
+                72821
+            ],
+            "fpu": [
+                350,
+                9433
+            ],
+            "heap": [
+                12372799,
+                99874628
+            ],
+            "loads": [
+                942024,
+                151387
+            ],
+            "alu": [
+                459099,
+                112874
+            ],
+            "stack": [
+                145118377,
+                146206144
+            ]
+        }
+    },
+    "SciMark2: MonteCarlo": {
+        "collective": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                0.0,
+                0.0,
+                0.0025662959794697047
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                0.0,
+                0.0,
+                0.002566295979469563
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                0.0,
+                0.0,
+                0.005132591958939268
+            ],
+            "MB_DOUBLE_APPROX": [
+                0.0,
+                0.0,
+                0.005132591958939268
+            ],
+            "MB_FLOAT_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                16329,
+                2986
+            ],
+            "fpu": [
+                2988,
+                4476
+            ],
+            "heap": [
+                55197,
+                0
+            ],
+            "loads": [
+                62701,
+                5969
+            ],
+            "alu": [
+                25103,
+                0
+            ],
+            "stack": [
+                22408,
+                1999816
+            ]
+        }
+    },
+    "Plane": {
+        "collective": [
+            9.45031658496732e-05,
+            0.03060318372140523,
+            0.1203807061887255
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                3.0509599673202613e-06,
+                0.00025672743055555556,
+                0.02150335733251634
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                2.170138888888889e-06,
+                0.0004239430147058824,
+                0.03294232536764706
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                8.951184640522876e-05,
+                0.010222834967320262
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                8.690767973856208e-05,
+                0.00017281964869281046,
+                0.017951708026960785
+            ],
+            "MB_DOUBLE_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "MB_FLOAT_APPROX": [
+                5.067912581699346e-05,
+                0.030161662581699347,
+                0.10420464409722223
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                1.2765522875816992e-07,
+                0.0
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                0.12345805249183006
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                562527,
+                1836806
+            ],
+            "fpu": [
+                50800,
+                2602000
+            ],
+            "heap": [
+                283648,
+                1316044800
+            ],
+            "loads": [
+                3377300,
+                3773600
+            ],
+            "alu": [
+                1227173,
+                0
+            ],
+            "stack": [
+                131880,
+                1210350464
+            ]
+        }
+    },
+    "SciMark2: SOR": {
+        "collective": [
+            9.3177817905854e-10,
+            0.64,
+            0.64
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                0.0,
+                0.0,
+                0.06097244331966503
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                0.0,
+                0.64,
+                0.6299608026550015
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                5.2385371041019366e-11,
+                0.20042885577138134
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "MB_DOUBLE_APPROX": [
+                9.3177817905854e-10,
+                5.9507433198580094e-05,
+                0.014595907274507172
+            ],
+            "MB_FLOAT_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                7.473647102895775e-07
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                11421,
+                6502
+            ],
+            "fpu": [
+                101,
+                38402
+            ],
+            "heap": [
+                20615,
+                116800
+            ],
+            "loads": [
+                111673,
+                44802
+            ],
+            "alu": [
+                31212,
+                0
+            ],
+            "stack": [
+                1070568,
+                2808
+            ]
+        }
+    },
+    "jME": {
+        "collective": [
+            0.0,
+            0.009900990099009901,
+            0.2079207920792079
+        ],
+        "individual": {
+            "TIMING_ERROR_PROB_PERCENT-3": [
+                0.0,
+                0.0,
+                0.13861386138613863
+            ],
+            "TIMING_ERROR_PROB_PERCENT-2": [
+                0.0,
+                0.009900990099009901,
+                0.1188118811881188
+            ],
+            "TIMING_ERROR_PROB_PERCENT-1": [
+                0.0,
+                0.0,
+                0.019801980198019802
+            ],
+            "INVPROB_SRAM_WRITE_FAILURE": [
+                0.0,
+                0.0,
+                0.019801980198019802
+            ],
+            "MB_DOUBLE_APPROX": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "MB_FLOAT_APPROX": [
+                0.0,
+                0.0,
+                0.04950495049504951
+            ],
+            "INVPROB_DRAM_FLIP_PER_SECOND": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "INVPROB_SRAM_READ_UPSET": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "approximateness": {
+            "stores": [
+                391,
+                7636
+            ],
+            "fpu": [
+                0,
+                8697
+            ],
+            "heap": [
+                3662329,
+                2720
+            ],
+            "loads": [
+                3882,
+                26838
+            ],
+            "alu": [
+                2987,
+                0
+            ],
+            "stack": [
+                2253972,
+                1386766
+            ]
+        }
+    }
+}

@@ -63,7 +63,8 @@
            destdir="build"
            optimize="true"
            debug="true"
-           deprecation="true">
+           deprecation="true"
+           encoding="UTF-8">
       <classpath>
         <pathelement location="../core/core.jar"/>
       </classpath>
