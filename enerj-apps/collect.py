@@ -29,6 +29,9 @@ BMARKS = {
     ],
     'simpleRaytracer': [
         Bmark('Plane', '' , 255, None)
+    ],
+    'HelloWorld': [
+        Bmark('HelloWorld', '', 9330, None)
     ]
 }
 COMMANDS = {
