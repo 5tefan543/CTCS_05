@@ -31,7 +31,10 @@ BMARKS = {
         Bmark('Plane', '' , 255, None)
     ],
     'HelloWorld': [
-        Bmark('HelloWorld', '', 9330, None)
+        Bmark('HelloWorld', '', 9330, None),
+    ],
+    'mandelbrot': [
+        Bmark('Mandelbrot', '', 'string', None),
     ]
 }
 COMMANDS = {

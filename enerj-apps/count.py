@@ -15,6 +15,7 @@ BMARKS = {
     'ImageJ':     ('imagefill', 'src'),
     'Plane':      ('simpleRaytracer', 'Plane.java'),
     'HelloWorld': ('HelloWorld', 'HelloWorld.java'),
+    'Mandelbrot': ('mandelbrot', 'src'),
 }
 COUNT = '../enerj/bin/enerjcount'
 ENDPAT = r'Endorsements\.endorse'

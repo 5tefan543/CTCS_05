@@ -1,9 +1,11 @@
 package src;
 
-public class RGB {
-    public double red;
-    public double green;
-    public double blue;
+import enerj.lang.*;
+
+public @Approximable class RGB {
+    public @Context double red;
+    public @Context double green;
+    public @Context double blue;
 
     public RGB() {
         this.red = 0;
