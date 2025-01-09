@@ -7,4 +7,4 @@ then
 enerjargs=
 fi
 
-$enerjdir/bin/enerj -Xmx10240m $enerjargs src/Mandelbrot 160 80 true
+$enerjdir/bin/enerj -Xmx10240m $enerjargs src/Mandelbrot 40 20 true

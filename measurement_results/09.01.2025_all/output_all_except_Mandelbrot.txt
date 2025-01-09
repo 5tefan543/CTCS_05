@@ -1,0 +1,1097 @@
+INFO:root:building simpleRaytracer with simulation
+INFO:root:running "Plane" precise
+INFO:root:collective noise level: 0
+INFO:root:running "Plane" approx
+INFO:root:collective noise level: 1
+INFO:root:running "Plane" approx
+INFO:root:collective noise level: 2
+INFO:root:running "Plane" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "Plane" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "Plane" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "Plane" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "Plane" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "Plane" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "Plane" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "Plane" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "Plane" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "Plane" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "Plane" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "Plane" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "Plane" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "Plane" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "Plane" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "Plane" approx
+INFO:root:building scimark2 with simulation
+INFO:root:running "SciMark2: FFT" precise
+INFO:root:running "SciMark2: SOR" precise
+INFO:root:running "SciMark2: MonteCarlo" precise
+INFO:root:running "SciMark2: SMM" precise
+INFO:root:running "SciMark2: LU" precise
+INFO:root:collective noise level: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:collective noise level: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:collective noise level: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "SciMark2: FFT" approx
+INFO:root:collective noise level: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:collective noise level: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:collective noise level: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "SciMark2: SOR" approx
+INFO:root:collective noise level: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:collective noise level: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:collective noise level: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "SciMark2: MonteCarlo" approx
+INFO:root:collective noise level: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:collective noise level: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:collective noise level: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "SciMark2: SMM" approx
+INFO:root:collective noise level: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:collective noise level: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:collective noise level: 2
+INFO:root:running "SciMark2: LU" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "SciMark2: LU" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "SciMark2: LU" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "SciMark2: LU" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "SciMark2: LU" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "SciMark2: LU" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "SciMark2: LU" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "SciMark2: LU" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "SciMark2: LU" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "SciMark2: LU" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "SciMark2: LU" approx
+Plane
+  mean error for collective noise variation:
+    level 0: 0.000114
+    level 1: 0.030530
+    level 2: 0.171629
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000003
+      level 1: 0.000196
+      level 2: 0.021738
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.000347
+      level 2: 0.032454
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000003
+      level 1: 0.000139
+      level 2: 0.010417
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000050
+      level 1: 0.000194
+      level 2: 0.018046
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    MB_FLOAT_APPROX:
+      level 0: 0.000051
+      level 1: 0.030162
+      level 2: 0.104205
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000003
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.034573
+      level 2: 0.111317
+  approximateness:
+    stores: 76.6% (1836806/2399333)
+    fpu: 98.1% (2602000/2652800)
+    heap: 100.0% (1347174400/1347456536)
+    loads: 52.8% (3773600/7150900)
+    alu: 0.0% (0/1227173)
+    stack: 100.0% (1218285084/1218421156)
+
+SciMark2: SOR
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.640000
+    level 2: 0.640000
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.014271
+      level 2: 0.296627
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.640000
+      level 2: 0.640000
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.356896
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000060
+      level 2: 0.014596
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.640000
+  approximateness:
+    stores: 36.3% (6502/17923)
+    fpu: 99.7% (38402/38503)
+    heap: 85.2% (126400/148315)
+    loads: 28.6% (44802/156475)
+    alu: 0.0% (0/31212)
+    stack: 0.2% (3064/1302724)
+
+SciMark2: MonteCarlo
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.000000
+    level 2: 0.002566
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000855
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.003422
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.003422
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.005133
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+  approximateness:
+    stores: 15.5% (2986/19315)
+    fpu: 60.0% (4476/7464)
+    heap: 0.0% (0/51980)
+    loads: 8.7% (5969/68670)
+    alu: 0.0% (0/25103)
+    stack: 98.9% (1859504/1880816)
+
+SciMark2: FFT
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.578074
+    level 2: 1.000000
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.083016
+      level 2: 0.508321
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 1.000000
+      level 2: 1.000000
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 1.000000
+    INVPROB_SRAM_WRITE_FAILURE:
+      leINFO:root:building HelloWorld with simulation
+INFO:root:running "HelloWorld" precise
+INFO:root:collective noise level: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:collective noise level: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:collective noise level: 2
+INFO:root:running "HelloWorld" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "HelloWorld" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "HelloWorld" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "HelloWorld" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "HelloWorld" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "HelloWorld" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "HelloWorld" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "HelloWorld" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "HelloWorld" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "HelloWorld" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "HelloWorld" approx
+vel 0: 0.125000
+      level 1: 0.000000
+      level 2: 1.000000
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.002287
+      level 2: 0.301856
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+  approximateness:
+    stores: 57.4% (69464/121020)
+    fpu: 100.0% (72500/72533)
+    heap: 79.1% (242944/307254)
+    loads: 29.4% (116900/397416)
+    alu: 0.0% (0/117179)
+    stack: 67.9% (89059780/131128116)
+
+SciMark2: SMM
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.000030
+    level 2: 0.007142
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.100000
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000030
+      level 2: 0.007142
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+  approximateness:
+    stores: 41.8% (7060/16894)
+    fpu: 99.4% (10000/10061)
+    heap: 60.5% (64080/105843)
+    loads: 20.5% (16000/77954)
+    alu: 0.0% (0/15311)
+    stack: 37.8% (328368/869784)
+
+SciMark2: LU
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.000034
+    level 2: 1.000000
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.688224
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.267455
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.400000
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000034
+      level 2: 0.006788
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+  approximateness:
+    stores: 42.4% (55480/130742)
+    fpu: 99.8% (62790/62901)
+    heap: 89.9% (631200/701969)
+    loads: 18.9% (107210/566902)
+    alu: 0.0% (0/137199)
+    stack: 38.2% (21694368/56785660)
+
+HelloWorld
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.000000
+    level 2: 0.000000
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+  approximateness:
+    stores: 52.0% (13/25)
+    fpu: 0.0% (0/0)
+    heap:INFO:root:building zxing with simulation
+INFO:root:running "ZXing" precise
+INFO:root:collective noise level: 0
+INFO:root:running "ZXing" approx
+INFO:root:collective noise level: 1
+INFO:root:running "ZXing" approx
+INFO:root:collective noise level: 2
+INFO:root:running "ZXing" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "ZXing" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "ZXing" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "ZXing" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "ZXing" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "ZXing" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "ZXing" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "ZXing" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "ZXing" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "ZXing" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "ZXing" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "ZXing" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "ZXing" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "ZXing" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "ZXing" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "ZXing" approx
+INFO:root:building imagefill with simulation
+INFO:root:running "ImageJ" precise
+INFO:root:collective noise level: 0
+INFO:root:running "ImageJ" approx
+INFO:root:collective noise level: 1
+INFO:root:running "ImageJ" approx
+INFO:root:collective noise level: 2
+INFO:root:running "ImageJ" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "ImageJ" approx
+WARNING:root:execution failed!
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "ImageJ" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "ImageJ" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "ImageJ" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "ImageJ" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "ImageJ" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "ImageJ" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "ImageJ" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "ImageJ" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "ImageJ" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "ImageJ" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "ImageJ" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "ImageJ" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "ImageJ" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "ImageJ" approx
+INFO:root:building jmeint with simulation
+INFO:root:running "jME" precise
+INFO:root:collective noise level: 0
+INFO:root:running "jME" approx
+INFO:root:collective noise level: 1
+INFO:root:running "jME" approx
+INFO:root:collective noise level: 2
+INFO:root:running "jME" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "jME" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "jME" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "jME" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "jME" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "jME" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "jME" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "jME" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "jME" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "jME" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "jME" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "jME" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "jME" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "jME" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "jME" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "jME" approx
+ 0.0% (0/0)
+    loads: 49.3% (33/67)
+    alu: 48.8% (20/41)
+    stack: 0.0% (0/72)
+
+ZXing
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.000000
+    level 2: 1.000000
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 1.000000
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 1.000000
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 1.000000
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 1.000000
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 1.000000
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+  approximateness:
+    stores: 26.3% (72821/276466)
+    fpu: 96.4% (9433/9783)
+    heap: 89.1% (96823580/108645314)
+    loads: 13.8% (151387/1093411)
+    alu: 19.7% (112874/571973)
+    stack: 50.0% (139678480/279297311)
+
+ImageJ
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.000000
+    level 2: 0.086133
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.072754
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.105273
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.105273
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.058398
+      level 1: 0.000000
+      level 2 failed!
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.045898
+  approximateness:
+    stores: 34.6% (4184/12109)
+    fpu: 0.0% (0/0)
+    heap: 98.3% (1267952/1289952)
+    loads: 30.5% (20813/68321)
+    alu: 11.0% (3866/35163)
+    stack: 45.9% (1725004/3758619)
+
+jME
+  mean error for collective noise variation:
+    level 0: 0.000000
+    level 1: 0.000000
+    level 2: 0.188119
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.138614
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.148515
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.029703
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.069307
+    MB_DOUBLE_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    MB_FLOAT_APPROX:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.049505
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+  approximateness:
+    stores: 95.1% (7636/8027)
+    fpu: 100.0% (8697/8697)
+    heap: 0.1% (2512/3598323)
+    loads: 87.4% (26838/30720)
+    alu: 0.0% (0/2987)
+    stack: 38.1% (1347087/3536467)
+

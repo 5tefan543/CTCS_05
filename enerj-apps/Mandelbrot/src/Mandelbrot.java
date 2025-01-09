@@ -14,8 +14,8 @@ public class Mandelbrot {
 
     private static final String OUTPUT_FOLDER = "output";
 
-    private static final int DEFAULT_SIZE_X = 160;
-    private static final int DEFAULT_SIZE_Y = 80;
+    private static final int DEFAULT_SIZE_X = 40;
+    private static final int DEFAULT_SIZE_Y = 20;
 
     private static final int NUM_CHANNELS = 3;
     private static final int MAX_ITER = 7500;
