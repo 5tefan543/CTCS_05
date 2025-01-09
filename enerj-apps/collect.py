@@ -8,6 +8,7 @@ import math
 import json
 import sys
 import re
+import imp
 
 Bmark = namedtuple('Benchmark', 'name runargs output regex')
 BMARKS = {
@@ -31,10 +32,10 @@ BMARKS = {
         Bmark('Plane', '' , 255, None)
     ],
     'HelloWorld': [
-        Bmark('HelloWorld', '', 9330, None),
+        Bmark('HelloWorld', '', 'string', None),
     ],
-    'mandelbrot': [
-        Bmark('Mandelbrot', '', 'string', None),
+    'Mandelbrot': [
+        Bmark('Mandelbrot', '', 'error_script', None),
     ]
 }
 COMMANDS = {
@@ -62,6 +63,9 @@ MED = 1
 HIGH = 2
 DISABLED = 0
 JSON_OUT = 'results.json'
+ERROR_SCRIPT_NAME = 'calc_error.py'
+ERROR_SCRIPT_CALC_ERROR_METHOD_NAME = 'calc_error'
+ERROR_SCRIPT_CALC_ERROR_MODULE_NAME = 'calc_error_module'
 
 class Result(object):
     def __init__(self, bmark):
@@ -170,28 +174,31 @@ def run(bmark, noise):
     out = out.strip()
 
     # Extract output.
-    if bmark.regex:
-        match = re.search(bmark.regex, out)
-        if match:
-            out = match.group(1)
-        else:
-            out = ''
-
-    if bmark.output != 'string':
-        if ':' in out:
-            tag, out = out.split(': ', 1)
-        else:
-            out = out
-
-    # Parse output.
-    if bmark.output in ('absolute', 'proportion', 'boolean'):
-        return [float(value.strip()) for value in out.split()]
-    if isinstance(bmark.output, int):
-        return [int(value.strip()) for value in out.split()]
-    elif bmark.output == 'string':
+    if bmark.output == 'error_script':
         return out
     else:
-        assert False
+        if bmark.regex:
+            match = re.search(bmark.regex, out)
+            if match:
+                out = match.group(1)
+            else:
+                out = ''
+
+        if bmark.output != 'string':
+            if ':' in out:
+                tag, out = out.split(': ', 1)
+            else:
+                out = out
+
+        # Parse output.
+        if bmark.output in ('absolute', 'proportion', 'boolean'):
+            return [float(value.strip()) for value in out.split()]
+        if isinstance(bmark.output, int):
+            return [int(value.strip()) for value in out.split()]
+        elif bmark.output == 'string':
+            return out
+        else:
+            assert False
 
 def replicated_run(bmark, noise):
     out = []
@@ -313,7 +320,22 @@ def err(x, y, proportion, norm=None):
 def calc_error(bmark, precise_output, approx_outputs):
     errors = []
     for approx_output in approx_outputs:
-        if bmark.output == 'string':
+        if bmark.output == 'error_script':
+            script_path = os.path.join(bmark.name, ERROR_SCRIPT_NAME)
+            if not os.path.exists(script_path):
+                raise ValueError("Custom error script not found: {}".format(script_path))
+            # load the custom error script in the benchmark's folder
+            custom_error_module = imp.load_source(ERROR_SCRIPT_CALC_ERROR_MODULE_NAME, script_path)
+            # Ensure the `calc_error` function exists in the loaded module
+            if not hasattr(custom_error_module, ERROR_SCRIPT_CALC_ERROR_METHOD_NAME):
+                raise ValueError("Function '{}' not found in script: {}".format(
+                    ERROR_SCRIPT_CALC_ERROR_METHOD_NAME, script_path))
+            # Calculate error using the custom script
+            error_func = getattr(custom_error_module, ERROR_SCRIPT_CALC_ERROR_METHOD_NAME)
+            error = error_func(precise_output, approx_output)
+            errors.append(error)
+
+        elif bmark.output == 'string':
             # String matching on output.
             if approx_output == precise_output:
                 errors.append(0.0)

@@ -9,7 +9,8 @@ RUN apt-get update && \
     unzip \
     ant \
     openjdk-7-jdk \
-    python2.7 && \
+    python2.7 \
+    nano && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Create a folder within the container
