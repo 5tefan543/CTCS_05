@@ -10,6 +10,6 @@ public class HelloWorld {
                 for(int i = 0; i < N; i++) {
                         sum += a+b; 
                 }
-                System.out.printf("%d\n", Endorsements.endorse(sum));
+                System.out.printf("(%d+%d)*%d=%d\n", Endorsements.endorse(a), Endorsements.endorse(b), N, Endorsements.endorse(sum));
         }
 }

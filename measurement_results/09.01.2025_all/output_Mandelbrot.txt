@@ -1,0 +1,110 @@
+INFO:root:building Mandelbrot with simulation
+INFO:root:running "Mandelbrot" precise
+INFO:root:collective noise level: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:collective noise level: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:collective noise level: 2
+INFO:root:running "Mandelbrot" approx
+INFO:root:individual variation for INVPROB_SRAM_WRITE_FAILURE
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_WRITE_FAILURE: 2
+INFO:root:running "Mandelbrot" approx
+INFO:root:individual variation for MB_DOUBLE_APPROX
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for MB_DOUBLE_APPROX: 2
+INFO:root:running "Mandelbrot" approx
+INFO:root:individual variation for MB_FLOAT_APPROX
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for MB_FLOAT_APPROX: 2
+INFO:root:running "Mandelbrot" approx
+INFO:root:individual variation for INVPROB_DRAM_FLIP_PER_SECOND
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for INVPROB_DRAM_FLIP_PER_SECOND: 2
+INFO:root:running "Mandelbrot" approx
+INFO:root:individual variation for INVPROB_SRAM_READ_UPSET
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:indiv. noise level for INVPROB_SRAM_READ_UPSET: 2
+INFO:root:running "Mandelbrot" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 1
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-1: 2
+INFO:root:running "Mandelbrot" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 2
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-2: 2
+INFO:root:running "Mandelbrot" approx
+INFO:root:individual variation for TIMING_ERROR_PROB_PERCENT mode 3
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 0
+INFO:root:running "Mandelbrot" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 1
+INFO:root:running "Mandelbrot" approx
+INFO:root:mode noise level for TIMING_ERROR_PROB_PERCENT-3: 2
+INFO:root:running "Mandelbrot" approx
+Mandelbrot
+  mean error for collective noise variation:
+    level 0: 0.000622
+    level 1: 0.018289
+    level 2: 0.212121
+  mean error for individual noise variation:
+    TIMING_ERROR_PROB_PERCENT-3:
+      level 0: 0.000000
+      level 1: 0.000424
+      level 2: 0.066975
+    TIMING_ERROR_PROB_PERCENT-2:
+      level 0: 0.000004
+      level 1: 0.002251
+      level 2: 0.138333
+    TIMING_ERROR_PROB_PERCENT-1:
+      level 0: 0.000000
+      level 1: 0.000121
+      level 2: 0.037814
+    INVPROB_SRAM_WRITE_FAILURE:
+      level 0: 0.000136
+      level 1: 0.000527
+      level 2: 0.053552
+    MB_DOUBLE_APPROX:
+      level 0: 0.000087
+      level 1: 0.000087
+      level 2: 0.000225
+    MB_FLOAT_APPROX:
+      level 0: 0.000371
+      level 1: 0.014189
+      level 2: 0.097115
+    INVPROB_DRAM_FLIP_PER_SECOND:
+      level 0: 0.000000
+      level 1: 0.000000
+      level 2: 0.000000
+    INVPROB_SRAM_READ_UPSET:
+      level 0: 0.000000
+      level 1: 0.002484
+      level 2: 0.186553
+  approximateness:
+    stores: 74.8% (62352711/83373652)
+    fpu: 99.9% (207586410/207752811)
+    heap: 99.9% (7132070400/7138112672)
+    loads: 81.1% (269874957/332925360)
+    alu: 0.0% (0/83306478)
+    stack: 98.4% (8757431583608/8902877174760)
+

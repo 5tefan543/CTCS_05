@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from collections import OrderedDict
 
-# The creation of this script used Chat-GPT as a Coding assistant.
+# The creation of this script used Chat-GPT as a coding assistant.
 
 def load_json(file_path):
     with open(file_path, 'r') as file:
@@ -386,7 +386,7 @@ def plot_normalized_total_energy(benchmark_data, energy_save_data, directory="."
 
 def print_usage():
     print("Usage: python script.py [<directory>]")
-    print("  <directory>: Directory where results.json and energy_save.json are located, and where plots will be saved (default: current directory)")
+    print("  <directory>: Directory where results.json is located, and where plots will be saved (default: current directory)")
 
 def main():
     directory = os.getcwd()
@@ -405,13 +405,13 @@ def main():
         sys.exit(1)
 
     results_file = os.path.join(directory, 'results.json')
-    energy_save_file = os.path.join(directory, 'energy_save.json')
+    energy_save_file = 'energy_save.json'
 
     if not os.path.isfile(results_file):
         print(f"Error: File '{results_file}' does not exist.")
         sys.exit(1)
     if not os.path.isfile(energy_save_file):
-        print(f"Error: File '{energy_save_file}' does not exist.")
+        print(f"Error: File '{energy_save_file}' does not exist in current directory.")
         sys.exit(1)
 
     # Load JSON files
