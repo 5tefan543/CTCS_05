@@ -4,8 +4,8 @@ import enerj.lang.*;
 
 public class HeatStencil2D {
 
-    static final int RESOLUTION_x = 50;
-    static final int RESOLUTION_y = 50;
+    static final int RESOLUTION_x = 25;
+    static final int RESOLUTION_y = 25;
 
     public static void main(String[] args) {
         int N_x = 768;
