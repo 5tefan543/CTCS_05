@@ -12,12 +12,12 @@ public class HeatStencil2D {
     public static void main(String[] args) {
         int N_x = 768;
         int N_y = 768;
-        boolean outputMode = false;
+        int outputMode = 0;
 
         if (args.length < 2) {
             System.out.println("ERROR: Not enough arguments");
             System.out.println("Usage: java HeatStencil2D <N_x> <N_y> [outputMode]");
-            System.out.println("outputMode: 0 for printing (default), 1 for writing to CSV");
+            System.out.println("outputMode: 0 for printing (default), 1 for writing to CSV, 2 for benchmarking print");
             return;
         }
 
@@ -25,14 +25,19 @@ public class HeatStencil2D {
         N_y = Integer.parseInt(args[1]);
         
         if (args.length >= 3) {
-            outputMode = Integer.parseInt(args[2]) == 1;
+            outputMode = Integer.parseInt(args[2]);
+            if(0 > outputMode || outputMode > 3){
+                outputMode = 0;
+            }
         }
 
         int T = N_x * 100;
-        System.out.printf("Computing heat-distribution for room size N = %d x %d for T=%d timesteps\n", N_x, N_y, T);
-        if(outputMode){
+        if(outputMode != 2){
+            System.out.printf("Computing heat-distribution for room size N = %d x %d for T=%d timesteps\n", N_x, N_y, T);
+        }
+        if(outputMode == 1){
             System.out.println("Writing results to temperatures.csv");
-        } else {
+        } else if(outputMode == 0) {
             System.out.println("Printing output to Terminal");
         }
 
@@ -51,72 +56,87 @@ public class HeatStencil2D {
         FileWriter writer = null;
 
         try{
-            if (outputMode) {
+            if (outputMode== 1) {
                 writer = new FileWriter("temperatures.csv");
             }
 
-        if(!outputMode){
-            System.out.println("Initial:");
-            printTemperature(A, N_x, N_y);
-            System.out.println();
-        } else {
-            writeArrayToFile(writer, A, N_x, N_y, 0);
-            writer.flush();
-        }
-
-        @Approx double[][] B = new @Approx double[N_y][N_x];
-
-        for (int t = 1; t < T; t++) {
-            for (int i = 0; i < N_y; i++) {
-                for (int j = 0; j < N_x; j++) {
-                    if (i == source_y && j == source_x) {
-                        B[i][j] = A[i][j];
-                        continue;
-                    }
-
-                    @Approx double tc = A[i][j];
-                    @Approx double tu = (i != 0) ? A[i - 1][j] : tc;
-                    @Approx double td = (i != N_y - 1) ? A[i + 1][j] : tc;
-                    @Approx double tl = (j != 0) ? A[i][j - 1] : tc;
-                    @Approx double tr = (j != N_x - 1) ? A[i][j + 1] : tc;
-
-                    B[i][j] = tc + 0.167 * (tl + tr + tu + td + (-4 * tc));
-                }
+            if(outputMode == 0){
+                System.out.println("Initial:");
+                printTemperature(A, N_x, N_y);
+                System.out.println();
+            } else if(outputMode == 1){
+                writeArrayToFile(writer, A, N_x, N_y, 0);
+                writer.flush();
             }
 
-            @Approx double[][] H = A;
-            A = B;
-            B = H;
+            @Approx double[][] B = new @Approx double[N_y][N_x];
 
-            if(t % 100 == 0){
-                if (t % 1000 == 0) {
-                    if(outputMode){
-                        writeArrayToFile(writer, A, N_x, N_y, t);
-                        writer.flush();
-                    } else {
-                        System.out.printf("Step t=%d:\n", t);
-                        printTemperature(A, N_x, N_y);
-                        System.out.println();
+            for (int t = 1; t < T; t++) {
+                for (int i = 0; i < N_y; i++) {
+                    for (int j = 0; j < N_x; j++) {
+                        if (i == source_y && j == source_x) {
+                            B[i][j] = A[i][j];
+                            continue;
+                        }
+
+                        @Approx double tc = A[i][j];
+                        @Approx double tu = (i != 0) ? A[i - 1][j] : tc;
+                        @Approx double td = (i != N_y - 1) ? A[i + 1][j] : tc;
+                        @Approx double tl = (j != 0) ? A[i][j - 1] : tc;
+                        @Approx double tr = (j != N_x - 1) ? A[i][j + 1] : tc;
+
+                        B[i][j] = tc + 0.167 * (tl + tr + tu + td + (-4 * tc));
                     }
-                } else if (!outputMode) {
-                    System.out.printf("Timestep %d complete. \n", t);
                 }
-            }
-            
-        }
 
-        if(!outputMode){
-            System.out.println("Final:");
-            printTemperature(A, N_x, N_y);
-            System.out.println();
-        } else {
-            writeArrayToFile(writer, A, N_x, N_y, T);
-            writer.flush();
+                @Approx double[][] H = A;
+                A = B;
+                B = H;
+
+                if(outputMode == 1 && t <= 10){
+                    writeArrayToFile(writer, A, N_x, N_y, t);
+                    writer.flush();
+                }
+                if(t % 100 == 0){
+                    if (t % 1000 == 0) {
+                        if(outputMode == 1){
+                            writeArrayToFile(writer, A, N_x, N_y, t);
+                            writer.flush();
+                        } else if (outputMode == 0){
+                            System.out.printf("Step t=%d:\n", t);
+                            printTemperature(A, N_x, N_y);
+                            System.out.println();
+                        }
+                    } else if (outputMode == 0) {
+                        System.out.printf("Timestep %d complete. \n", t);
+                    }
+                }
+                
+            }
+
+           if(outputMode == 1) {
+                writeArrayToFile(writer, A, N_x, N_y, T);
+                writer.flush();
+            } else if(outputMode == 2){
+                for (int i = 0; i < N_y; i++) {
+                    for (int j = 0; j < N_x; j++) {
+                        System.out.printf(String.format("%.2f", Endorsements.endorse(A[i][j])));
+                        if (j < N_x - 1) {
+                            System.out.print(" ");
+                        }
+                    }
+                    System.out.printf("\n");
+                }
+                System.out.printf("\n");
+            } else{
+                System.out.println("Final:");
+                printTemperature(A, N_x, N_y);
+                System.out.println();
+            }
+        } catch (IOException e){
+            System.out.println("ERROR: Could not write to file.");
+            e.printStackTrace();
         }
-    } catch (IOException e){
-        System.out.println("ERROR: Could not write to file.");
-        e.printStackTrace();
-    }
 
         boolean success = true;
         for (int i = 0; i < N_y; i++) {
@@ -128,7 +148,9 @@ public class HeatStencil2D {
             }
         }
 
-        System.out.println("Verification: " + (success ? "OK" : "FAILED"));
+        if(outputMode == 0 || outputMode == 1){
+            System.out.println("Verification: " + (success ? "OK" : "FAILED"));
+        }
     }
 
     static void writeArrayToFile(FileWriter writer, @Approx double[][] matrix, int N_x, int N_y, int timestep) throws IOException {

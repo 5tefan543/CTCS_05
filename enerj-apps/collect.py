@@ -36,7 +36,10 @@ BMARKS = {
     ],
     'Mandelbrot': [
         Bmark('Mandelbrot', '', 'error_script', None),
-    ]
+    ],
+    'heatStencil2D': [
+    Bmark('heatStencil2D', '15 15 2', 'error_script', None),
+    ],
 }
 COMMANDS = {
     'run_precise':   './run.sh -nonoise %s',
@@ -415,10 +418,10 @@ if __name__ == '__main__':
     if args and args[0] == '-d':
         logging.getLogger('').setLevel(logging.DEBUG)
         args.pop(0)
-    elif args and args[0] == '-a':
+    if args and args[0] == '-a':
         apronly = True
         args.pop(0)
-    elif args and args[0] == '-c':
+    if args and args[0] == '-c':
         colonly = True
         args.pop(0)
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+ #!/bin/sh
 enerjdir=../../enerj
 mainclass=src/HeatStencil2D
 

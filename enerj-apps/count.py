@@ -16,6 +16,7 @@ BMARKS = {
     'Plane':      ('simpleRaytracer', 'Plane.java'),
     'HelloWorld': ('HelloWorld', 'HelloWorld.java'),
     'Mandelbrot': ('Mandelbrot', 'src'),
+    'heatStencil2D': ('heatStecil2D', 'src/HeatStencil2D.java'),
 }
 COUNT = '../enerj/bin/enerjcount'
 ENDPAT = r'Endorsements\.endorse'
