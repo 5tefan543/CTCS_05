@@ -4,6 +4,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 from collections import OrderedDict
+import csv
 
 # The creation of this script used Chat-GPT as a coding assistant.
 
@@ -70,7 +71,7 @@ def plot_output_error(benchmark_data, directory=".", filename="output_error_plot
     plt.ylabel("Output Error", fontsize=12)
 
     # Set x-ticks and rotate labels
-    plt.xticks(x, benchmark_names, rotation=45, ha="right", fontsize=10)
+    plt.xticks(x, benchmark_names, rotation=25, ha="center", fontsize=8.5)
 
     plt.gca().spines['top'].set_visible(False)      # Hide the top spine
     plt.gca().spines['right'].set_visible(False)    # Hide the right spine
@@ -151,7 +152,7 @@ def plot_operation_fractions(benchmark_data, directory=".", filename="operation_
     plt.ylabel("Fraction Approximate", fontsize=12)
 
     # Set x-ticks and rotate labels
-    plt.xticks(x, benchmark_names, rotation=45, ha="right", fontsize=10)
+    plt.xticks(x, benchmark_names, rotation=25, ha="center", fontsize=10)
 
     plt.gca().spines['top'].set_visible(False)      # Hide the top spine
     plt.gca().spines['right'].set_visible(False)    # Hide the right spine
@@ -181,10 +182,7 @@ def plot_operation_fractions(benchmark_data, directory=".", filename="operation_
 def plot_normalized_total_energy(benchmark_data, energy_save_data, directory=".", filename="normalized_total_energy_plot.png"):
     """
     Creates and saves a plot showing energy consumption for DRAM, SRAM, Integer, and FP components.
-
-    :param benchmark_data: Dictionary containing benchmark data with operation counts.
-    :param energy_save_data: Dictionary containing energy savings for levels 1, 2, 3.
-    :param filename: Name of the file to save the plot.
+    Also returns the energy savings data for saving into a CSV.
     """
     # Extract benchmark names
     benchmark_names = list(benchmark_data.keys())
@@ -242,16 +240,26 @@ def plot_normalized_total_energy(benchmark_data, energy_save_data, directory="."
 
             # Integer reduction
             int_reduction = (
-                (num_int_approx * (37 - 22) / total_weighted_ops) *0.2 * energy_save_data["INT"][reduction]
+                (num_int_approx * (37 - 22) / total_weighted_ops) * 0.2 * energy_save_data["INT"][reduction]
             ) if total_weighted_ops != 0 else 0
             energy_approx[level]["Integer"].append(energy_base["Integer"][-1] - int_reduction)
 
             # FP reduction
             fp_reduction = (
-                (num_fp_approx * (40 - 22) / total_weighted_ops)*0.2 * energy_save_data["FLOAT"][reduction]
+                (num_fp_approx * (40 - 22) / total_weighted_ops) * 0.2 * energy_save_data["FLOAT"][reduction]
             ) if total_weighted_ops != 0 else 0
             energy_approx[level]["FP"].append(energy_base["FP"][-1] - fp_reduction)
 
+    # Save the energy savings data in a format suitable for CSV
+    energy_savings_data = {}
+    for i, name in enumerate(benchmark_names):
+        energy_savings_data[name] = {
+            "Base": sum([energy_base[key][i] for key in energy_base]),
+            "Level 1": sum([energy_approx[1][key][i] for key in energy_approx[1]]),
+            "Level 2": sum([energy_approx[2][key][i] for key in energy_approx[2]]),
+            "Level 3": sum([energy_approx[3][key][i] for key in energy_approx[3]])
+        }
+        
     # X-axis positions for grouped bars
     x = np.arange(len(benchmark_names)) * 0.75
     bar_width = 0.18
@@ -329,16 +337,6 @@ def plot_normalized_total_energy(benchmark_data, energy_save_data, directory="."
             edgecolor="black"
         )
 
-    # Set axis labels and ticks
-    plt.ylabel("Normalized Total Energy", fontsize=12)
-    plt.xticks(
-        x,
-        benchmark_names,  # Only show benchmark names
-        rotation=45,
-        ha="right",
-        fontsize=10
-    )
-
     # Adjust y-axis limit and move x-axis
     plt.ylim(-0.05, 1.0)  # Extend y-limit slightly upward
     plt.gca().spines['bottom'].set_position(('outward', 10))  # Move x-axis slightly higher
@@ -354,8 +352,14 @@ def plot_normalized_total_energy(benchmark_data, energy_save_data, directory="."
         # Level 3
         plt.text(x[i] + 1.5 * bar_width, -0.02, "3", ha="center", va="center", fontsize=10)
 
-
-
+    # Set axis labels and ticks
+    plt.ylabel("Normalized Total Energy", fontsize=12)
+    plt.xticks(
+        x,
+        benchmark_names,  # Only show benchmark names
+        ha="center",
+        fontsize=8.5
+    )
     plt.yticks(np.arange(0, 1.1, 0.2), ["0%", "20%", "40%", "60%", "80%", "100%"], fontsize=10)
 
     # Set y-axis limit to 1.0
@@ -383,10 +387,22 @@ def plot_normalized_total_energy(benchmark_data, energy_save_data, directory="."
     plt.close()
 
     print(f"Plot saved as '{output_path}'.")
+    return energy_savings_data
 
 def print_usage():
     print("Usage: python script.py [<directory>]")
     print("  <directory>: Directory where results.json is located, and where plots will be saved (default: current directory)")
+
+def save_energy_savings_to_json(energy_savings_data, file_path):
+    """
+    Saves the energy savings data to a JSON file.
+
+    :param energy_savings_data: Dictionary containing energy savings data.
+    :param file_path: Path to save the JSON file.
+    """
+    with open(file_path, 'w') as json_file:
+        json.dump(energy_savings_data, json_file, indent=4)
+    print(f"Energy savings data saved to '{file_path}'.")
 
 def main():
     directory = os.getcwd()
@@ -423,7 +439,9 @@ def main():
     # Generate plots
     plot_output_error(benchmarks_data, directory=directory)
     plot_operation_fractions(benchmarks_data, directory=directory)
-    plot_normalized_total_energy(benchmarks_data, energy_save_data, directory=directory)
+    energy_savings_data = plot_normalized_total_energy(benchmarks_data, energy_save_data, directory=directory)
+    csv_file_path = os.path.join(directory, "total_energy_savings.json")
+    save_energy_savings_to_json(energy_savings_data, csv_file_path)
 
 if __name__ == "__main__":
     main()

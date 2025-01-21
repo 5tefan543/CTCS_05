@@ -23,7 +23,7 @@ def calc_error(precise_output, approx_output):
     count = 0
     for row1, row2 in zip(precise_array, approx_array):
         for val1, val2 in zip(row1, row2):
-            if val2 >= 333 or val2 < 273 or math.isnan(val2):
+            if val2 > 333 or val2 < 273 or math.isnan(val2):
                 error = 1.0
             else:
                 error = abs(val1 - val2) / 60
